@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
-  *main - prints a string
+  *main - prints a string using puts
+  *Return: 0 to end function
   */
 int main(void)
 {
