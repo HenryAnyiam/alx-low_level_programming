@@ -24,8 +24,10 @@ int main(void)
 		{
 			for (l = i; l <= '9'; ++l)
 			{
-				for (f = d + 1; f <= '9'; ++f)
+				for (f = '0'; f <= '9'; ++f)
 				{
+					if ((i == l) && (f <= d))
+						continue;
 					putchar(i);
 					putchar(d);
 					putchar(s);
