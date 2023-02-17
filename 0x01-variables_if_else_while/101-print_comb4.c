@@ -13,7 +13,7 @@ int main(void)
 	int c;
 	int n;
 
-	i = 0;
+	i = '0';
 	s = ' ';
 	c = ',';
 	n = '\n';
