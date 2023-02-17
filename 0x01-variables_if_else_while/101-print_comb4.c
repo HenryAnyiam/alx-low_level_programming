@@ -20,6 +20,7 @@ int main(void)
 	while (i <= '9')
 	{
 		for (d = i + 1; d <= '9'; ++d)
+		{
 			for (l = d + 1; l <= '9'; ++l)
 			{
 				putchar(i);
@@ -31,6 +32,7 @@ int main(void)
 				putchar(s);
 				}
 			}
+		}
 		++i;
 	}
 	putchar(n);
