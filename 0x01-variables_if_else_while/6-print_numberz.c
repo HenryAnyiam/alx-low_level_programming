@@ -2,7 +2,7 @@
 
 /**
   *main- prints digits 0-9
-  *Returns: 0 to end main
+  *Return: 0 to end main
   */
 int main(void)
 {
