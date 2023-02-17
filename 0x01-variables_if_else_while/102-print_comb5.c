@@ -31,7 +31,7 @@ int main(void)
 					putchar(s);
 					putchar(l);
 					putchar(f);
-					if (!(i == '9' && f == '9' && l == '9' and d == '8'))
+					if (!(i == '9' && f == '9' && l == '9' && d == '8'))
 					{
 						putchar(c);
 						putchar(s);
