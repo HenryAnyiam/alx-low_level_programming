@@ -25,8 +25,11 @@ int main(void)
 				putchar(i);
 				putchar(d);
 				putchar(l);
+				if (i != '7')
+				{
 				putchar(c);
 				putchar(s);
+				}
 			}
 		++i;
 	}

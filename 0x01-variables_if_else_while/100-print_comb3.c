@@ -22,8 +22,11 @@ int main(void)
 		{
 			putchar(i);
 			putchar(d);
+			if (i != '8')
+			{
 			putchar(c);
 			putchar(s);
+			}
 		}
 		++i;
 	}
