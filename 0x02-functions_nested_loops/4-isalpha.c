@@ -9,15 +9,23 @@
 int _isalpha(int c)
 {
 	int u;
+	int l;
 	int val;
 
 	val = 0;
 	u = 'A';
-	while(u <= 'Z')
+	l = 'a'
+	while (u <= 'Z')
 	{
 		if (c == u)
 			val = 1;
 		++u;
+	}
+	while (l <= 'z')
+	{
+		if (c == l)
+			val = 1;
+		++l
 	}
 	return (val);
 }
