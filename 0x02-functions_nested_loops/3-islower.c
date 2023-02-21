@@ -4,7 +4,7 @@
   *_islower - checks for lower case character
   *@c: alphabet to be checked
   (*
-  *Returns: 1 if lower, 0 otherwise
+  *Return: 1 if lower, 0 otherwise
   */
 int _islower(int c)
 {
