@@ -2,7 +2,9 @@
 
 /**
   *_islower - checks for lower case character
-  *Returns: final result
+  *c: alphabet to be checked
+  (*
+  *Returns: val final result
   */
 int _islower(int c)
 {
