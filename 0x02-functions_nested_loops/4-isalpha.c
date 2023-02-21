@@ -14,7 +14,7 @@ int _isalpha(int c)
 
 	val = 0;
 	u = 'A';
-	l = 'a'
+	l = 'a';
 	while (u <= 'Z')
 	{
 		if (c == u)
@@ -25,7 +25,7 @@ int _isalpha(int c)
 	{
 		if (c == l)
 			val = 1;
-		++l
+		++l;
 	}
 	return (val);
 }
