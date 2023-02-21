@@ -21,7 +21,7 @@ int main(void)
 	i = 0;
 	while (i <= 8)
 	{
-		_putchar(n);
+		_putchar(n[i]);
 		++i;
 	}
 	return (0);
