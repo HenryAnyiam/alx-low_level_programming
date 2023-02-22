@@ -17,7 +17,7 @@ int main(void)
 		printf("%li, %li", a, b);
 		a = a + b;
 		b = a + b;
-		if (i != 24)
+		if (b != 4000000)
 			printf(", ");
 	}
 	sum = '\n';
