@@ -39,7 +39,10 @@ void print_times_table(int n)
 					}
 				}
 				if (i != n)
+				{
 					_putchar(',');
+					_putchar(' ');
+				}
 				m = m + a;
 			}
 			_putchar('\n');
