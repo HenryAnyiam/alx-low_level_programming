@@ -20,7 +20,7 @@ int main(void)
 		a = a + b;
 		b = a + b;
 		if (i != 24)
-			printf(",");
+			printf(", ");
 		++i;
 	}
 	sum = '\n';
