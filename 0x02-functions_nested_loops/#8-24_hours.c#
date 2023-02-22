@@ -18,10 +18,10 @@ void jack_bauer(void)
 	while (h <= '2')
 	{
 		l = '0';
+		if ((h == '2') && (l == '4'))
+			break;
 		while (l <= '9')
 		{
-			if ((h == '2') && (l == '4'))
-				break;
 			m = '0';
 			while (m <= '5')
 			{
