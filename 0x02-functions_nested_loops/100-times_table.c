@@ -6,11 +6,11 @@
   */
 void print_times_table(int n)
 {
-	int a, s, n, c, i, m, g, h, j;
+	int a, s, p, c, i, m, g, h, j;
 
 	a = 0;
 	s = ' ';
-	n = '\n';
+	p = '\n';
 	c = ',';
 	if (!((n > 15) || (n < 0)))
 	{
@@ -54,7 +54,7 @@ void print_times_table(int n)
 				m = m + a;
 			++i;
 			}
-			_putchar(n);
+			_putchar(p);
 			++a;
 		}
 	}
