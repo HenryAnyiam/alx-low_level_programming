@@ -2,7 +2,7 @@
 
 /**
   *print_sign - prints the sign of a number
-  *@n: number to check 
+  *@n: number to check
   (*
   *Return: sign of number
   */
@@ -10,8 +10,10 @@ int print_sign(int n)
 {
 	int p;
 	int m;
+	int z;
 	int val;
 
+	z = 0;
 	val = 0;
 	p = '+';
 	m = '-';
@@ -25,7 +27,10 @@ int print_sign(int n)
 		_putchar(m);
 		--val;
 	}
-	else
-		_putchar(val);
+	else if (n == 0)
+	{
+		_putchar(z);
+		val = 0;
+	}
 	return (val);
 }
