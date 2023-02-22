@@ -21,8 +21,10 @@ void print_times_table(int n)
 				if ((m == 0) && (i == 0))
 					_putchar(m + '0');
 				else if (m <= 9)
+				{
 					_putchar(s);
 					_putchar(m + '0');
+				}
 				else
 				{
 					if (m <= 99)
