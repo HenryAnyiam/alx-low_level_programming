@@ -16,7 +16,7 @@ int main(void)
 	b = 2;
 	while (i <= 24)
 	{
-		printf("%d,%d,", a, b);
+		printf("%li,%li,", a, b);
 		a = a + b;
 		b = a + b;
 	}
