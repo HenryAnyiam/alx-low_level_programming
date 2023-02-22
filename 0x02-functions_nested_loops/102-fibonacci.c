@@ -14,13 +14,11 @@ int main(void)
 	i = 0;
 	a = 1;
 	b = 2;
-	sum = 0;
-	while (i <= 50)
+	while (i <= 25)
 	{
 		printf("%d,%d,", a, b);
-		sum = b;
+		a = a + b;
 		b = a + b;
-		a = b;
 	}
 	sum = '\n';
 	putchar(sum);
