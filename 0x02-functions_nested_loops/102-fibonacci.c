@@ -22,5 +22,7 @@ int main(void)
 		b = a + b;
 		a = b;
 	}
-	printf("\n");
+	sum = "\n"
+	printf("%d", sum);
+	return (0)
 }
