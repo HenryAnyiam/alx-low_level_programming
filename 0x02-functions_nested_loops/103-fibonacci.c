@@ -16,6 +16,8 @@ int main(void)
 	{
 		if ((b % 2) == 0)
 			sum = sum + b;
+		if ((a % 2) == 0)
+			sum = sum + a;
 		a = a + b;
 		b = a + b;
 	}
