@@ -17,7 +17,6 @@ void times_table(void)
 		m = 0;
 		while (i <= 9)
 		{
-			m = m + a;
 			if ((m == 0) && (i == 0))
 				_putchar(m + '0');
 			else if (m <= 9)
@@ -37,6 +36,7 @@ void times_table(void)
 				_putchar(c);
 				_putchar(s);
 			}
+			m = m + a;
 			++i;
 		}
 		_putchar(n);
