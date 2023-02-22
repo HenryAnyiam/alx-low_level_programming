@@ -13,7 +13,7 @@ int print_sign(int n)
 	int z;
 	int val;
 
-	z = 0;
+	z = '0';
 	val = 0;
 	p = '+';
 	m = '-';
