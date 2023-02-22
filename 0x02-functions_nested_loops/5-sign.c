@@ -27,7 +27,7 @@ int print_sign(int n)
 		_putchar(m);
 		--val;
 	}
-	else if (n == 0)
+	else
 	{
 		_putchar(z);
 		val = 0;
