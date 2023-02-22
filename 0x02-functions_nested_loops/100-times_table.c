@@ -16,17 +16,14 @@ void print_times_table(int n)
 	{
 		while (a <= n)
 		{
-			i = 0;
-			m = 0;
+			i = m = 0;
 			while (i <= n)
 			{
 				if ((m == 0) && (i == 0))
 					_putchar(m + '0');
+				_putchar(s);
 				else if (m <= 9)
-				{
-					_putchar(s);
 					_putchar(m + '0');
-				}
 				else
 				{
 					if (m <= 99)
@@ -40,7 +37,7 @@ void print_times_table(int n)
 					{
 						g = m / 100;
 						h = m % 100;
-						j = (m /10) % 10;
+						j = (m / 10) % 10;
 						_putchar(g + '0');
 						_putchar(j + '0');
 						_putchar(h + '0');
