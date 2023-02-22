@@ -24,5 +24,5 @@ int main(void)
 	}
 	sum = '\n';
 	putchar(sum);
-	return (0)
+	return (0);
 }
