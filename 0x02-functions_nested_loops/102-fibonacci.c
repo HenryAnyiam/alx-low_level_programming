@@ -6,15 +6,15 @@
   */
 int main(void)
 {
-	int a;
-	int b;
-	int i;
+	long a;
+	long b;
+	long i;
 	int sum;
 
 	i = 0;
 	a = 1;
 	b = 2;
-	while (i <= 25)
+	while (i <= 24)
 	{
 		printf("%d,%d,", a, b);
 		a = a + b;
