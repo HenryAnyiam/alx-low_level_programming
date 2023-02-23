@@ -12,8 +12,8 @@ int _isdigit(int c)
 	int val;
 
 	val = 0;
-	l = 0;
-	while (l <= 9)
+	l = '0';
+	while (l <= '9')
 	{
 		if (c == l)
 			val = 1;
