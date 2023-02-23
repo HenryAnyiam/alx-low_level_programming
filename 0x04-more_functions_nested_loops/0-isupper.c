@@ -6,7 +6,7 @@
   (*
   *Return: 1 if upper, 0 otherwise
   */
-int _islower(int c)
+int _isupper(int c)
 {
 	int l;
 	int val;

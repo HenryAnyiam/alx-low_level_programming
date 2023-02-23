@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-  *_isdigit - checks for lower case character
-  *@c: alphabet to be checked
+  *_isdigit - checks for digit
+  *@c: digit to be checked
   (*
   *Return: 1 if digit, 0 otherwise
   */
