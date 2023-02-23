@@ -4,7 +4,7 @@
   *print_diagonal - print diagonal
   *@n: number of diagonals
   */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int i, j;
 
