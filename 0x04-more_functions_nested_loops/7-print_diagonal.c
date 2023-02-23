@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-  *print_diagonal - print diagonal
-  *@n: number of diagonals
+  *print_diagonal - print diagonal line
+  *@n: number of times \ is printed
   */
 void print_diagonal(int n)
 {
@@ -13,7 +13,7 @@ void print_diagonal(int n)
 		i = 1;
 		while (i <= n)
 		{
-			for(j = 0; j <= i; ++j)
+			for (j = 1; j <= i; ++j)
 				_putchar(' ');
 			_putchar('\\');
 			_putchar('\n');
