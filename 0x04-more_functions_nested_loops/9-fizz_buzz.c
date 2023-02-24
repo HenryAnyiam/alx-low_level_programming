@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
-  *fizz_buzz - prints fizzbuzz
+  *main - prints fizzbuzz
+  *Return: 0 to end function
   */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -22,5 +23,6 @@ void main(void)
 			putchar(' ');
 		++i;
 	}
-	printf("\n");
+	putchar('\n');
+	return (0);
 }
