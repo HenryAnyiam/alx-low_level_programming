@@ -9,7 +9,7 @@
   */
 char reverse(int i, char *c)
 {
-	char j[];
+	char *j;
 	int a, b;
 
 	a = 0;
@@ -34,5 +34,5 @@ void rev_string(char *s)
 	i = 0;
 	while (*(s + i) != '\0')
 		++i;
-	s = reverse(i, s);
+	*s = reverse(i, s);
 }
