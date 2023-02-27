@@ -16,11 +16,11 @@ char reverse(int i, char *c)
 	b = i - 1;
 	while (i >= 0)
 	{
-		j[a] = *(c + b);
+		*(j + a) = *(c + b);
 		++a;
 		--b;
 	}
-	return (j);
+	return (*j);
 }
 
 /**
