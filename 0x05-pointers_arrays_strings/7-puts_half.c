@@ -17,7 +17,7 @@ void puts_half(char *str)
 		while (b <= a)
 		{
 			if (*(str + b) == '\0')
-				continue;
+				break;
 			_putchar(*(str + b));
 			++b;
 		}
@@ -28,7 +28,7 @@ void puts_half(char *str)
 		while (b <= a)
 		{
 			if (*(str + b) == '\0')
-				continue;
+				break;
 			_putchar(*(str + b));
 			++b;
 		}
