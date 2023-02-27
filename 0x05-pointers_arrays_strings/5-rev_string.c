@@ -9,14 +9,14 @@
   */
 char reverse(int i, char *c)
 {
-	char j[i];
+	char j[];
 	int a, b;
 
 	a = 0;
 	b = i - 1;
 	while (i >= 0)
 	{
-		j[a] = *(s + b);
+		j[a] = *(c + b);
 		++a;
 		--b;
 	}
