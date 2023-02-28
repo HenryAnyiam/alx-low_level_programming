@@ -11,7 +11,6 @@ void puts_half(char *str)
 	a = 0;
 	while (*(str + a) != '\0')
 		++a;
-	--a;
 	if ((a % 2) == 0)
 	{
 		b = a / 2;
@@ -26,6 +25,7 @@ void puts_half(char *str)
 	else
 	{
 		b = (a - 1) / 2;
+		--b;
 		while (b <= a)
 		{
 			if (*(str + b) == '\0')
