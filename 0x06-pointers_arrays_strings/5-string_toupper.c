@@ -2,9 +2,9 @@
 
 /**
   *string_toupper - capitalizes a string
-  *@a: pointer to string
+  *@*: pointer to string
   */
-char *string_toupper(char *a)
+char *string_toupper(char *)
 {
 	int i;
 	char l, u;
