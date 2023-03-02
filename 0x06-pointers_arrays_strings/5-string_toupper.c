@@ -3,6 +3,8 @@
 /**
   *string_toupper - capitalizes a string
   *@a: pointer to string
+  *)
+  *Return: capitalized string
   */
 char *string_toupper(char *a)
 {
@@ -23,4 +25,5 @@ char *string_toupper(char *a)
 		}
 		++i;
 	}
+	return (a);
 }
