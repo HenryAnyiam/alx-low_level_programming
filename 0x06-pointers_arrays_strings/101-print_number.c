@@ -21,7 +21,7 @@ void print_number(int n)
 		while ((n / 10) != 0)
 		{
 			i = n / j;
-			if (b != 0)
+			if (i != 0)
 				break;
 			j /= 10;
 		}
