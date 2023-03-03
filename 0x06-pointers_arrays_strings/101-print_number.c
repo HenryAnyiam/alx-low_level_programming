@@ -8,7 +8,7 @@ void print_number(int n)
 {
 	int i, j;
 
-	j = 100000000;
+	j = 1000000000;
 	if (n == 0)
 		_putchar(n + '0');
 	else if (n < 0)
