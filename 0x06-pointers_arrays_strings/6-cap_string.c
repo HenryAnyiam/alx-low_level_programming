@@ -1,5 +1,3 @@
-#include "main.h"
-  
  /**
    *cap_string - capitalizes all words of a string
    *@a: string
@@ -28,9 +26,11 @@
                                          a[i] = u;
                                  ++u;
                                  ++l;
-                         }
-                         --i;
+			 }
+			 --i;
                  }
+		 else if (s[0] >= 'a' && s[0] <= 'z')
+			 s[0] = s[0] - 32;
                  ++i;
          }
          return (a);
