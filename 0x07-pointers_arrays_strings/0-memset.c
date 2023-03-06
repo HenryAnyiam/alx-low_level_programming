@@ -6,7 +6,7 @@
   *@b: byte to fill with
   *@n: number of first bytes to fill
   *)
-  *Return: pointer to memory area filled
+  *Return: pointer to modified memory area
   */
 char *_memset(char *s, char b, unsigned int n)
 {
