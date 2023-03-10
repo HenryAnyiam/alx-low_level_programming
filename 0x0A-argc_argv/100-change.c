@@ -17,15 +17,15 @@ int main(int argc, char *argv[])
 		num = atoi(argv[1]);
 		if (num >= 0)
 		{
-			change = num/25;
+			change = num / 25;
 			num %= 25;
-			change += num/10;
+			change += num / 10;
 			num %= 10;
-			change += num/5;
+			change += num / 5;
 			num %= 5;
-			change += num/2;
+			change += num / 2;
 			num %= 2;
-			change += num/1;
+			change += num / 1;
 			printf("%d\n", change);
 		}
 		else
