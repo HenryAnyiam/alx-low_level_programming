@@ -13,6 +13,8 @@ char *str_concat(char *s1, char *s2)
 	unsigned int c, i, size;
 	char *str;
 
+	if ((s1 == NULL) && (s2 == NULL))
+		return (NULL);
 	size = 0;
 	if (s1 != NULL)
 		while (s1[size] != '\0')
