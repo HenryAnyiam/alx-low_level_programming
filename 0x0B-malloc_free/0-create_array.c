@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	s = malloc((size + 1) * sizeof(char));
+	s = malloc(size * sizeof(char));
 	if (s == NULL)
 	{
 		return (NULL);
@@ -29,6 +29,5 @@ char *create_array(unsigned int size, char c)
 		s[i] = c;
 		i++;
 	}
-	s[i] = '\0';
 	return (s);
 }
