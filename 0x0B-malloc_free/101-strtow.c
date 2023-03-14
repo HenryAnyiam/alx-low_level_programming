@@ -13,14 +13,14 @@ char **strtow(char *str)
 	char **s;
 	unsigned int i, j, c;
 
-	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 	c = 0;
 	for (i = 0; str[i] != '\0'; i++)
 		if ((str[i] != ' ') && ((str[i + 1] == ' ') || (str[i + 1] == '\0')))
 			c++;
 	s = malloc(sizeof(char *) * (c + 1));
-	if (s == NULL)
+	if (s == NULL || c == 0)
 		return (NULL);
 	c = j = 0;
 	for (i = 0; str[i] != '\0'; i++)
