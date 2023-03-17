@@ -134,6 +134,8 @@ char *_itoa(unsigned long m)
   *main - multiplies two integers
   *@argc: number of arguments
   *@argv: array of arguments
+  *)
+  *Return: 0
   */
 int main(int argc, char **argv)
 {
@@ -156,7 +158,6 @@ int main(int argc, char **argv)
 	m = _atoi(argv[1], len1) * _atoi(argv[2], len2);
 	res = _itoa(m);
 	_puts(res);
-	_putchar('\0');
 	_putchar('\n');
 	return (0);
 }
