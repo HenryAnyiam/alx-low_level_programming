@@ -23,7 +23,7 @@ int _strlen(char *str)
   *)
   *Return: copied string
   */
-void _strcpy(char *a, char *b)
+char * _strcpy(char *a, char *b)
 {
 	int i;
 
