@@ -23,7 +23,7 @@ int _strlen(char *str)
   *)
   *Return: copied string
   */
-char * _strcpy(char *a, char *b)
+char *_strcpy(char *a, char *b)
 {
 	int i;
 
@@ -48,20 +48,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new = malloc(sizeof(dog_t));
 	if (new == NULL)
 		return (NULL);
-	new->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	new->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (new->name == NULL)
+	if (new->name != NULL && new->owner != NULL)
 	{
-		free(new);
-		return (NULL);
+		new->name = malloc(sizeof(char) * (_strlen(name) + 1));
+		new->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+		if (new->name == NULL)
+		{
+			free(new);
+			return (NULL);
+		}
+		if (new->owner == NULL)
+		{
+			free(new);
+			return (NULL);
+		}
+		new->name = _strcpy(name, new->name);
+		new->age = age;
+		new->owner = _strcpy(owner, new->owner);
+		return (new);
 	}
-	if (new->owner == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
-	new->name = _strcpy(name, new->name);
-	new->age = age;
-	new->owner = _strcpy(owner, new->owner);
-	return (new);
+	return (NULL);
 }
