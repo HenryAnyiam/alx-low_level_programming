@@ -29,7 +29,7 @@ char *_strcpy(char *a, char *b)
 
 	for (i = 0; a[i] != '\0'; i++)
 		b[i] = a[i];
-	b[i] = '\0';
+	b[i + 1] = '\0';
 	return (b);
 }
 
