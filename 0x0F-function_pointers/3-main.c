@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	operator = get_op_func(argv[2]);
-	if (operator == 0)
+	if (!operator)
 	{
 		printf("Error\n");
 		exit(99);
