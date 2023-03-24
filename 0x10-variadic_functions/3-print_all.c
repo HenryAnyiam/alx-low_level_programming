@@ -18,30 +18,18 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				switch (check)
-					case 1:
-						printf(", ");
 				check = 1;
 				printf("%c", va_arg(d, int));
 				break;
 			case 'i':
-				switch (check)
-					case 1:
-						printf(", ");
 				check = 1;
 				printf("%d", va_arg(d, int));
 				break;
 			case 'f':
-				switch (check)
-					case 1:
-						printf(", ");
 				check = 1;
 				printf("%f", va_arg(d, double));
 				break;
 			case 's':
-				switch (check)
-					case 1:
-						printf(", ");
 				check = 1;
 				str = va_arg(d, char *);
 				if (str == NULL)
@@ -49,6 +37,9 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 		}
+		if ((check == 1) && (format[i + 1] != '\0'))
+			printf(", ");
+		check = 0;
 		i++;
 	}
 	va_end(d);
