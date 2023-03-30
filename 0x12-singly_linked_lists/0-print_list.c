@@ -3,7 +3,7 @@
 
 /**
   *print_list - prints linked lists elements
-  *h: pointer to linked head
+  *@h: pointer to linked head
   *)
   *Return: length
   */
