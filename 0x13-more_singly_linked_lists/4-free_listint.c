@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
-  *free_listint: frees linked list
+  *free_listint - frees linked list
   *@head: start of node
   */
 void free_listint(listint_t *head)
