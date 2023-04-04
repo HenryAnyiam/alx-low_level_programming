@@ -19,14 +19,14 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
 		pt = head - head->next;
-		if (pt <= 0)
+		i++;
+		if (pt < 0)
 		{
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 			break;
 		}
 		else
 			head = head->next;
-		i++;
 	}
 	return (i);
 }
