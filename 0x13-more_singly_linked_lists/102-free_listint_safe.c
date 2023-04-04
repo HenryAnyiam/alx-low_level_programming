@@ -13,6 +13,8 @@ size_t free_listint_safe(listint_t **h)
 	size_t i = 0;
 	listint_t *temp;
 
+	if (*h == NULL)
+		return (0);
 	while (*h)
 	{
 		i++;
