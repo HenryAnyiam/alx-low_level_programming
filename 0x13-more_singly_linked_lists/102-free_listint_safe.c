@@ -27,7 +27,11 @@ size_t free_listint_safe(listint_t **h)
 		}
 		else
 		{
-			free((*h)->next);
+			if ((i != 2) || (i != 3))
+			{
+				free((*h)->next);
+				free(*h);
+			}
 			(*h) = NULL;
 			break;
 		}
