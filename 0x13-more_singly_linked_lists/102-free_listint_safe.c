@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -27,7 +28,7 @@ size_t free_listint_safe(listint_t **h)
 		}
 		else
 		{
-			if ((i != 2) || (i != 3))
+			if (i > 2)
 			{
 				free((*h)->next);
 				free(*h);
