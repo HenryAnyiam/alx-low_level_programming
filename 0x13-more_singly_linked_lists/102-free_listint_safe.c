@@ -22,16 +22,14 @@ size_t free_listint_safe(listint_t **h)
 		if (pt > 0)
 		{
 			temp = (*h)->next;
-			free(*h);
 			(*h) = temp;
 		}
 		else
 		{
-			free((*h)->next);
-			free(*h);
 			(*h) = NULL;
 			break;
 		}
 	}
+	(*h) = NULL;
 	return (i);
 }
