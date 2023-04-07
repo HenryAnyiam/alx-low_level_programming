@@ -11,6 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int digit =  n ^ m;
 	int i, flip;
+
 	if (digit <= 4294967295)
 		i = 32;
 	else
