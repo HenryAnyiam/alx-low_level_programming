@@ -17,7 +17,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	else
 		i = 64;
 	flip = 0;
-	for ( ; i > 0; i--)
+	for ( ; i >= 0; i--)
 	{
 		if ((digit >> i) & 1)
 			flip++;
