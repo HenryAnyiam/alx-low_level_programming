@@ -16,7 +16,7 @@ void print_binary(unsigned long int n)
 		i = 64;
 	else
 		i = 32;
-	for ( ; i >= 0; i--)
+	for ( ; i > 0; i--)
 	{
 		digit = n >> i;
 		if (digit & 1)
