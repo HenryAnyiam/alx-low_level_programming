@@ -23,12 +23,12 @@ int main(int argc, char **argv)
 	}
 	ff = open(argv[1], O_RDONLY);
 	ft = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (ft < 0)
+	if (ff < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	if (ff < 0)
+	if (ft < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
