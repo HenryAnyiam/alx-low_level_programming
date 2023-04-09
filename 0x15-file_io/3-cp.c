@@ -38,11 +38,20 @@ int main(int argc, char **argv)
 	{
 		r_check = read(ff, buf, 1024);
 		w_check = write(ft, buf, r_check);
-		if (w_check < 0)
+		if ((w_check < 0) || (w_check != r_check))
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(ff);
+			close(ft);
 			exit(99);
 		}
+	}
+	if (r_check < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		close(ff);
+		close(ft);
+		exit(98);
 	}
 	r_check = close(ff);
 	w_check = close(ft);
