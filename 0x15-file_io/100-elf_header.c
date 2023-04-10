@@ -123,7 +123,7 @@ void class(unsigned char *elf)
 
 void data(unsigned char *elf)
 {
-	printf("   Data:%30s", " ");
+	printf("  Data:%30s", " ");
 	switch (elf[EI_DATA])
 	{
 		case ELFDATANONE:
