@@ -121,6 +121,10 @@ void class(unsigned char *elf)
 	}
 }
 
+/**
+  *data - prints data of ELF file
+  *@elf: array containing data
+  */
 void data(unsigned char *elf)
 {
 	printf("  Data:%30s", " ");
@@ -140,6 +144,10 @@ void data(unsigned char *elf)
 	}
 }
 
+/**
+  *version - print version of an ELF
+  *@elf: array containing version
+  */
 void version(unsigned char *elf)
 {
 	printf("  Version:%27s%d", " ", elf[EI_VERSION]);
@@ -154,6 +162,10 @@ void version(unsigned char *elf)
 	}
 }
 
+/**
+  *os_abi - prints OS/ABI of an elf file
+  *@elf: array containing os/abi
+  */
 void os_abi(unsigned char *elf)
 {
 	printf("  OS/ABI:%28s", " ");
@@ -194,11 +206,20 @@ void os_abi(unsigned char *elf)
 	}
 }
 
+/**
+  *abi - prints ABI of an ELF
+  *@elf: array containing ABI
+  */
 void abi(unsigned char *elf)
 {
 	printf("  ABI Version:%23s%d\n", " ", elf[EI_ABIVERSION]);
 }
 
+/**
+  *type - prints type of an ELF
+  *@e_type: type
+  *@elf: array containing type
+  */
 void type(unsigned int e_type, unsigned char *elf)
 {
 	if (elf[EI_DATA] == ELFDATA2MSB)
@@ -226,6 +247,11 @@ void type(unsigned int e_type, unsigned char *elf)
 	}
 }
 
+/**
+  *entry - prints entry point address of an ELF
+  *@e_entry: address of entry point
+  *@elf: arry containing Data and Class
+  */
 void entry(unsigned long int e_entry, unsigned char *elf)
 {
 	printf("  Entry point address:%15s", " ");
@@ -241,6 +267,13 @@ void entry(unsigned long int e_entry, unsigned char *elf)
 		printf("%#lx\n", e_entry);
 }
 
+/**
+  *main - displays the information contained in the ELF header of an ELF file.
+  *@argc: number of arguments
+  *@argv: array of arguments
+  *)
+  *Return: 0 on success
+  */
 int main(int argc, char **argv)
 {
 	int fd, check;
