@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 	if (n == 0)
 		_putchar('0');
 	if (n > 4294967295)
-		i = 64;
+		i = 63;
 	else
 		i = 32;
 	for ( ; i >= 0; i--)
