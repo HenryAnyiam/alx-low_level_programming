@@ -172,11 +172,11 @@ void shash_table_print(const shash_table_t *ht)
 		printf("{");
 		while (curr != NULL)
 		{
-			printf("'%s' : '%s'", curr->key, curr->value);
+			printf("'%s': '%s'", curr->key, curr->value);
 			coll = curr->next;
 			while (coll != NULL)
 			{
-				printf("'%s' : '%s'", coll->key, coll->value);
+				printf("'%s': '%s'", coll->key, coll->value);
 				if (coll->next != NULL && coll->snext != NULL)
 					printf(", ");
 				coll = coll->next;
@@ -203,11 +203,11 @@ void shash_table_print_rev(const shash_table_t *ht)
 		printf("}");
 		while (curr != NULL)
 		{
-			printf("'%s' : '%s'", curr->key, curr->value);
+			printf("'%s': '%s'", curr->key, curr->value);
 			coll = curr->next;
 			while (coll != NULL)
 			{
-				printf("'%s' : '%s'", coll->key, coll->value);
+				printf("'%s': '%s'", coll->key, coll->value);
 				if (coll->next != NULL && coll->snext != NULL)
 					printf(", ");
 				coll = coll->next;
