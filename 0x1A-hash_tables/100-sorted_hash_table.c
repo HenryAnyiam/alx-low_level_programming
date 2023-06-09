@@ -100,6 +100,14 @@ int insert_s(shash_table_t *ht, shash_node_t *data)
 		return (0);
 	}
 	curr = ht->shead;
+	if (curr->snext == NULL && (curr->key[0] > data->key[0]))
+	{
+		data->sprev = NULL;
+		data->snext = curr;
+		curr->sprev = data;
+		ht->shead = data;
+		return (0);
+	}
 	while (curr->snext != NULL)
 	{
 		if (curr->key[0] < data->key[0])
