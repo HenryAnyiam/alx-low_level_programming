@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *data, *curr;
 
 	if (strlen(key) == 0)
-		return (0);
+		return (1);
 	index = key_index((const unsigned char *)key, ht->size);
 	data = malloc(sizeof(hash_node_t));
 	if (data == NULL)
