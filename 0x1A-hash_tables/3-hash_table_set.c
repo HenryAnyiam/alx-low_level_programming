@@ -32,18 +32,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	data->key = strdup(key);
 	data->value = strdup(value);
-	if (ht->array[index] == NULL)
-	{
-		data->next = NULL;
-		ht->array[index] = data;
-		return (1);
-	}
 	curr = ht->array[index];
 	while (curr != NULL)
 	{
-		if (strcmp(curr->key, data->key) == 0)
+		if (strcmp(curr->key, key) == 0)
 		{
-			curr->value = strdup(data->value);
+			free(curr->value);
+			curr->value = strdup(value);
 			free_node(data);
 			return (1);
 		}
