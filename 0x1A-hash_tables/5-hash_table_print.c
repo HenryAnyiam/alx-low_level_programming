@@ -10,14 +10,9 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *curr;
 	int check = 0;
 
-	if (ht != NULL)
+	if (ht != NULL && ht->array != NULL)
 	{
 		printf("{");
-		if (ht->array == NULL)
-		{
-			printf("}\n");
-			exit(EXIT_SUCCESS);
-		}
 		for (i = 0; i < ht->size; i++)
 		{
 			curr = ht->array[i];
