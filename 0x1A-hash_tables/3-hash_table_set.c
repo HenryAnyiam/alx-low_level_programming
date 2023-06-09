@@ -46,13 +46,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			data->next = curr->next;
 			if (prev != NULL)
 				prev->next = data;
+			else
+				ht->array[index] = data
 			free_node(curr);
 			return (1);
 		}
 		prev = curr;
 		curr = curr->next;
 	}
-	data->next = curr;
+	data->next = ht->array[index];
 	ht->array[index] = data;
 	return (1);
 }
