@@ -7,7 +7,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
-	int check = 0;
+	hash_node_t *curr, *hold;
 
 	if (ht != NULL)
 	{
@@ -21,7 +21,7 @@ void hash_table_print(const hash_table_t *ht)
 			curr = ht->array[i];
 			while (curr != NULL)
 			{
-				hold = curr
+				hold = curr;
 				curr = curr->next;
 				free_node(hold);
 			}
