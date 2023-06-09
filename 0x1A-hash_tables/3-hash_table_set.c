@@ -22,7 +22,7 @@ void free_node(hash_node_t *data)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *data, *curr, *prev = NULL;
+	hash_node_t *data, *curr;
 
 	if (strlen(key) == 0)
 		return (0);
@@ -41,17 +41,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	curr = ht->array[index];
 	while (curr != NULL)
 	{
-		if (strcmp(curr->value, data->value) == 0)
+		if (strcmp(curr->key, data->key) == 0)
 		{
-			data->next = curr->next;
-			if (prev != NULL)
-				prev->next = data;
-			else
-				ht->array[index] = data;
-			free_node(curr);
+			curr->value = strdup(data->value);
+			free_node(data);
 			return (1);
 		}
-		prev = curr;
 		curr = curr->next;
 	}
 	data->next = ht->array[index];
