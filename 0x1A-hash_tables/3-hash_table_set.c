@@ -47,7 +47,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (prev != NULL)
 				prev->next = data;
 			else
-				ht->array[index] = data
+				ht->array[index] = data;
 			free_node(curr);
 			return (1);
 		}
