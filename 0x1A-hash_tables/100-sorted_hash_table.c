@@ -200,7 +200,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 	if (ht != NULL && ht->array != NULL)
 	{
 		curr = ht->stail;
-		printf("}");
+		printf("{");
 		while (curr != NULL)
 		{
 			printf("'%s': '%s'", curr->key, curr->value);
