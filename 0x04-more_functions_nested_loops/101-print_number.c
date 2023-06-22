@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_number - prints number
+ * @n: numer
+ */
 void print_number(int n)
 {
 	int num = n;
