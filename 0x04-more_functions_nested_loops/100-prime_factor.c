@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
+/**
+ * main - prints largest prime factor
+ * )
+ * Return: 0
+ */
 int main(void)
 {
 	long i, max, num = 612852475143;
