@@ -6,7 +6,7 @@ int main(void)
 	long i, max, num = 612852475143;
 	double sqr = sqrt(num);
 
-	for (i = 0; i <= sqr; i++)
+	for (i = 1; i <= sqr; i++)
 	{
 		if (num % i == 0)
 			max = num / i;
