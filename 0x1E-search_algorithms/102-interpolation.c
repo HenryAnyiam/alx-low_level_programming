@@ -43,6 +43,8 @@ int interpolation_search(int *array, size_t size, int value)
 {
 	int lo, hi, index;
 
+	if (array == NULL)
+		return (-1);
 	lo = 0;
 	hi = size - 1;
 	index = search(array, lo, hi, value);
